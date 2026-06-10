@@ -7,12 +7,13 @@
 }
 
 html {
-    scroll-behavior: smooth; /* Rolagem suave nativa */
+    scroll-behavior: smooth; /* Rolagem suave ao clicar nos links */
 }
 
 body {
     color: #333;
     line-height: 1.6;
+    background-color: #fff;
 }
 
 /* Cabeçalho */
@@ -78,7 +79,7 @@ header nav ul li a:hover {
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
                 url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200') no-repeat center center/cover;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,13 +108,21 @@ header nav ul li a:hover {
     text-decoration: none;
     font-weight: bold;
     border-radius: 25px;
-    transition: background 0.3s;
+    transition: all 0.3s ease;
     display: inline-block;
 }
 
 .btn:hover {
     background-color: #fff;
     color: #1b4d3e;
+    transform: scale(1.05);
+}
+
+.btn-js {
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 /* Seções */
@@ -139,7 +148,7 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Cards de Projetos */
+/* Cards */
 .cards-container {
     display: flex;
     justify-content: space-between;
@@ -154,7 +163,7 @@ h2 {
     min-width: 250px;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
     border-top: 5px solid #1b4d3e;
     transition: transform 0.3s;
 }
@@ -168,6 +177,15 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Box de Mensagem JS */
+.mensagem-box {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1b4d3e;
+    min-height: 40px;
+}
+
 /* Rodapé */
 footer {
     background-color: #1b4d3e;
@@ -175,9 +193,10 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+    margin-top: 40px;
 }
 
-/* Responsividade para Celulares */
+/* Responsividade (Telas menores/Celular) */
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
@@ -187,7 +206,7 @@ footer {
         display: none;
         width: 100%;
         position: absolute;
-        top: 70px;
+        top: 74px;
         left: 0;
         background-color: #1b4d3e;
         padding: 20px;
