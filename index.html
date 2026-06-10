@@ -3,72 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2026 - Inovação e Sustentabilidade</title>
+    <title>Agrinho 2026 - Do Campo à Cidade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <div class="logo">Agrinho <span>2026</span></div>
-        
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir Menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </button>
-
-        <nav id="navMenu">
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="interface">
+            <div class="logo">
+                <h1>Agrinho <span>2026</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">O Projeto</a></li>
+                    <li><a href="#tema">Tema 2026</a></li>
+                    <li><a href="#inscricoes">Inscrições</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Alimentando o Futuro com Tecnologia e Consciência</h1>
-            <p>Descubra como a nova geração está transformando o campo através da sustentabilidade e da inovação digital.</p>
-            <a href="#sobre" class="btn">Saber Mais</a>
-        </div>
-    </section>
-
-    <section id="sobre" class="section-padding">
-        <h2>O Programa Agrinho</h2>
-        <p>O Agrinho 2026 traz como foco a união entre os saberes tradicionais do campo e as novas ferramentas tecnológicas. Nosso objetivo é incentivar estudantes a desenvolverem soluções criativas para uma agricultura mais verde e eficiente.</p>
-    </section>
-
-    <section id="projetos" class="bg-light section-padding">
-        <h2>Pilares de 2026</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>Sustentabilidade</h3>
-                <p>Práticas que protegem o solo, economizam água e preservam a biodiversidade para as próximas gerações.</p>
-            </div>
-            <div class="card">
-                <h3>Inovação Digital</h3>
-                <p>O uso de drones, sensores e inteligência artificial para monitorar plantios e evitar desperdícios.</p>
-            </div>
-            <div class="card">
-                <h3>Cidadania</h3>
-                <p>Formar jovens conscientes de seu papel social, conectando a comunidade escolar com o desenvolvimento rural.</p>
+    <section id="inicio" class="banner">
+        <div class="interface">
+            <div class="texto-banner">
+                <h2>Sustentabilidade e Inovação no Campo</h2>
+                <p>Conectando a educação ao futuro do agronegócio inteligente e consciente.</p>
+                <a href="#sobre" class="btn">Saiba Mais</a>
             </div>
         </div>
     </section>
 
-    <section id="tecnologia" class="section-padding">
-        <h2>Tecnologia no Campo</h2>
-        <p>Em 2026, a tecnologia caminha lado a lado com a natureza. Clique no botão abaixo para ver uma mensagem de incentivo do Agrinho!</p>
-        <button id="btnMensagem" class="btn" style="margin-top: 20px; border: none; cursor: pointer;">Ver Mensagem</button>
-        <div id="mensagemContainer" style="margin-top: 20px; font-weight: bold; color: #1b4d3e;"></div>
+    <section id="sobre" class="sobre">
+        <div class="interface">
+            <h2>Sobre o Programa Agrinho</h2>
+            <p>O Agrinho é o maior programa de responsabilidade social do Sistema FAEP/SENAR-PR. Há anos, ele transforma a realidade de milhares de estudantes, incentivando a pesquisa, a criatividade e a cidadania através de temas essenciais para o nosso desenvolvimento.</p>
+           
+            <div class="cards">
+                <div class="card">
+                    <h3>Educação</h3>
+                    <p>Propostas pedagógicas que estimulam o pensamento crítico nas escolas públicas e particulares.</p>
+                </div>
+                <div class="card">
+                    <h3>Cidadania</h3>
+                    <p>Projetos que geram impacto real nas comunidades, unindo o campo e o espaço urbano.</p>
+                </div>
+                <div class="card">
+                    <h3>Sustentabilidade</h3>
+                    <p>Práticas agrícolas modernas que protegem o meio ambiente e garantem o futuro.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Programa Agrinho. Desenvolvido para um futuro sustentável.</p>
-    </footer>
+    <section id="tema" class="tema-ano">
+        <div class="interface">
+            <div class="conteudo-tema">
+                <h2>Tema 2026: A Força da Tecnologia Sustentável</h2>
+                <p>Em 2026, o foco do Agrinho está na **digitalização e inovação no campo**. Queremos descobrir como os jovens enxergam o uso de drones, inteligência artificial e energias renováveis para produzir alimentos de forma limpa e eficiente.</p>
+                <blockquote>"O futuro da agricultura está nas mãos da nova geração conectada."</blockquote>
+            </div>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
-</body>
-</html>
+    <section id="inscricoes" class="inscricoes">
+        <div class="interface">
+            <h2>Participe do Agrinho 2026</h2>
+            <p>Se você é aluno ou professor, não fique de fora. Envie seu projeto e concorra a prêmios incríveis!</p>
+           
+            <form class="formulario">
+                <input type="text" placeholder="Seu Nome Completo" required>
+                <input type="email" placeholder="Seu Melhor E-mail" required>
+                <select required>
+                    <option value="" disabled selected>Selecione sua categoria</option>
+                    <option value="desenho">Desenho (Educação Infantil/Fundamental)</option>
+                    <option value="redacao">Redação</option>
+                    <option value="experiencia">Experiência Pedagógica (Professores)</option>
+                </select>
+                <button type="submit" class="btn">Quero Participar</button>
